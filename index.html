@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En-Ting Hsu | Violist & Educator</title>
+    <meta name="description" content="En-Ting Hsu — violist, chamber musician, and dedicated string educator based in the Berkshires, MA. Private lessons in violin, viola, and chamber music.">
+    <meta name="keywords" content="violin lessons Berkshires, viola lessons Massachusetts, string teacher Berkshire County, music lessons Williamstown, chamber music coaching, wedding musician Berkshires, event musician Massachusetts, En-Ting Hsu violist">
+    <!-- Favicon — a simple viola-inspired SVG -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎻</text></svg>">
+    <!-- Schema.org structured data for local SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "En-Ting Hsu",
+        "description": "Violist, chamber musician, and string educator based in the Berkshires, MA. Private lessons in violin, viola, and chamber music. Available for weddings and events.",
+        "url": "",
+        "image": "images/headshot.jpg",
+        "genre": ["Classical", "Chamber Music"],
+        "location": {
+            "@type": "Place",
+            "name": "Berkshire County, Massachusetts",
+            "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "MA",
+                "addressCountry": "US"
+            }
+        },
+        "email": "ckdinay@gmail.com",
+        "sameAs": [
+            "https://www.linkedin.com/in/en-ting-hsu-476008b8/"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Music Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Private Violin Lessons",
+                        "description": "One-on-one violin instruction for all ages and levels"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Private Viola Lessons",
+                        "description": "Viola instruction from a Doctor of Musical Arts"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Event & Wedding Performance",
+                        "description": "Live string ensemble music for weddings, receptions, and private events in the Berkshires"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* ============================================
+           EN-TING HSU — PERSONAL WEBSITE
+
+           TO EDIT THIS SITE:
+           - Text content is in the HTML below
+           - Colors can be changed in the :root section
+           - Images go in the /images/ folder
+           ============================================ */
+
+        :root {
+            --navy: #2d2040;
+            --navy-light: #3d3055;
+            --gold: #e07a5f;
+            --gold-light: #f2a68d;
+            --cream: #fdf8f4;
+            --cream-dark: #f5ede6;
+            --text-dark: #2c2c2c;
+            --text-medium: #5a5a5a;
+            --text-light: #8a8a8a;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-dark);
+            background-color: var(--cream);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ---- TYPOGRAPHY ---- */
+        h1, h2, h3, h4 {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        /* ---- NAVIGATION ---- */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(45, 32, 64, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 0 2rem;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .nav-brand {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.3rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--cream);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Mobile menu button */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--cream);
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+
+        /* ---- HERO SECTION ---- */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: var(--navy);
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 50%, var(--navy) 100%);
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80%;
+            height: 200%;
+            background: radial-gradient(ellipse, rgba(201, 169, 110, 0.07) 0%, transparent 70%);
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text {
+            z-index: 2;
+        }
+
+        .hero-text h1 {
+            font-size: 3.8rem;
+            color: var(--cream);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.01em;
+        }
+
+        .hero-tagline {
+            font-family: 'DM Serif Display', serif;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .hero-description {
+            font-size: 1.05rem;
+            color: rgba(250, 248, 245, 0.75);
+            max-width: 480px;
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.85rem 2rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--navy);
+            border: 2px solid var(--gold);
+        }
+
+        .btn-primary:hover {
+            background: var(--gold-light);
+            border-color: var(--gold-light);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--cream);
+            border: 2px solid rgba(250, 248, 245, 0.3);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        .hero-image {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+            margin-left: auto;
+            display: block;
+        }
+
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 100%;
+            max-width: 450px;
+            height: 100%;
+            border: 2px solid var(--gold);
+            border-radius: 10px;
+            opacity: 0.3;
+            z-index: -1;
+            margin-left: auto;
+            display: block;
+        }
+
+        /* ---- SECTION STYLING ---- */
+        section {
+            padding: 6rem 2rem;
+        }
+
+        .section-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 0.75rem;
+        }
+
+        .section-title {
+            font-size: 2.4rem;
+            color: var(--navy);
+            margin-bottom: 1.5rem;
+        }
+
+        .section-divider {
+            width: 50px;
+            height: 2px;
+            background: var(--gold);
+            margin-bottom: 2.5rem;
+        }
+
+        /* ---- ABOUT SECTION ---- */
+        .about {
+            background: var(--white);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .about-text p {
+            color: var(--text-medium);
+            margin-bottom: 1.2rem;
+            font-size: 1.02rem;
+        }
+
+        .about-text .highlight-quote {
+            font-family: 'DM Serif Display', serif;
+            font-style: italic;
+            font-size: 1.25rem;
+            color: var(--navy);
+            border-left: 3px solid var(--gold);
+            padding-left: 1.25rem;
+            margin: 2rem 0;
+            line-height: 1.6;
+        }
+
+        .credentials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .credential-tag {
+            background: var(--cream);
+            color: var(--text-medium);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* ---- TEACHING SECTION ---- */
+        .teaching {
+            background: var(--cream);
+        }
+
+        .teaching-intro {
+            max-width: 700px;
+            color: var(--text-medium);
+            font-size: 1.05rem;
+            margin-bottom: 3rem;
+        }
+
+        .lesson-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .lesson-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--gold);
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+
+        .lesson-card h3 {
+            font-size: 1.3rem;
+            color: var(--navy);
+            margin-bottom: 0.75rem;
+        }
+
+        .lesson-card p {
+            color: var(--text-medium);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .lesson-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .lesson-card ul li {
+            color: var(--text-medium);
+            font-size: 0.9rem;
+            padding: 0.3rem 0;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .lesson-card ul li::before {
+            content: '♪';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-size: 0.8rem;
+        }
+
+        .teaching-philosophy {
+            background: var(--navy);
+            border-radius: 12px;
+            padding: 3rem;
+            color: var(--cream);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .teaching-philosophy h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: var(--gold-light);
+        }
+
+        .teaching-philosophy p {
+            font-size: 1rem;
+            line-height: 1.8;
+            opacity: 0.85;
+        }
+
+        .teaching-philosophy img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .certifications {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .cert-badge {
+            background: rgba(224, 122, 95, 0.15);
+            color: var(--gold-light);
+            padding: 0.35rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            border: 1px solid rgba(224, 122, 95, 0.25);
+        }
+
+        /* ---- PERFORMANCE SECTION ---- */
+        .performance {
+            background: var(--white);
+        }
+
+        .performance-intro {
+            max-width: 700px;
+            color: var(--text-medium);
+            font-size: 1.05rem;
+            margin-bottom: 3rem;
+        }
+
+        .perf-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .perf-item {
+            padding: 2rem;
+            border-radius: 12px;
+            background: var(--cream);
+            border-left: 4px solid var(--gold);
+        }
+
+        .perf-item h3 {
+            font-size: 1.15rem;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .perf-item p {
+            color: var(--text-medium);
+            font-size: 0.95rem;
+        }
+
+        .perf-item .perf-role {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        /* ---- UPCOMING PERFORMANCES ---- */
+        .upcoming {
+            margin-top: 3rem;
+            background: var(--white);
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        .upcoming h3 {
+            font-size: 1.4rem;
+            color: var(--navy);
+            margin-bottom: 1.5rem;
+        }
+
+        .upcoming-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .upcoming-list li {
+            display: grid;
+            grid-template-columns: 120px 1fr auto;
+            gap: 1.5rem;
+            align-items: center;
+            padding: 1.2rem 0;
+            border-bottom: 1px solid var(--cream-dark);
+        }
+
+        .upcoming-list li:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .upcoming-date {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1rem;
+            color: var(--gold);
+            white-space: nowrap;
+        }
+
+        .upcoming-info strong {
+            display: block;
+            color: var(--navy);
+            font-size: 1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .upcoming-info span {
+            font-size: 0.9rem;
+            color: var(--text-medium);
+        }
+
+        .upcoming-list .btn {
+            font-size: 0.8rem;
+            padding: 0.5rem 1.2rem;
+        }
+
+        .no-performances {
+            color: var(--text-light);
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 600px) {
+            .upcoming-list li {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+        }
+
+        /* ---- EVENT BOOKING CALLOUT ---- */
+        .event-callout {
+            margin-top: 3rem;
+            background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
+            border-radius: 12px;
+            padding: 3rem;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 2rem;
+            align-items: center;
+            border: 2px solid rgba(224, 122, 95, 0.2);
+        }
+
+        .event-callout h3 {
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .event-callout p {
+            color: var(--text-medium);
+            font-size: 1rem;
+            max-width: 600px;
+        }
+
+        @media (max-width: 600px) {
+            .event-callout {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .event-callout .btn {
+                justify-self: center;
+            }
+        }
+
+        /* ---- TESTIMONIAL WITH VIDEO (inside teaching section) ---- */
+        .testimonial-with-video {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            background: var(--white);
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        .testimonial-side .quote-mark {
+            font-family: 'DM Serif Display', serif;
+            font-size: 3.5rem;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: 0.3rem;
+        }
+
+        .testimonial-side blockquote {
+            font-family: 'DM Serif Display', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--navy);
+            line-height: 1.7;
+            margin-bottom: 1.2rem;
+        }
+
+        .testimonial-side .testimonial-author {
+            font-size: 0.95rem;
+            color: var(--text-medium);
+            font-weight: 500;
+        }
+
+        .testimonial-side .testimonial-detail {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 0.25rem;
+        }
+
+        .testimonial-video-side .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-video-side .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .testimonial-video-side .video-caption {
+            text-align: center;
+            margin-top: 0.75rem;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        /* ---- MEDIA / VIDEO SECTION ---- */
+        .media {
+            background: var(--white);
+        }
+
+        .media-intro {
+            max-width: 700px;
+            color: var(--text-medium);
+            font-size: 1.05rem;
+            margin-bottom: 3rem;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .video-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            background: var(--cream);
+            text-decoration: none;
+            display: block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .video-card .video-thumb {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            background: #111;
+        }
+
+        .video-card .video-thumb img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-card .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 64px;
+            height: 64px;
+            background: rgba(224, 122, 95, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .video-card:hover .play-btn {
+            background: var(--gold);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .video-card .play-btn::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 0 10px 18px;
+            border-color: transparent transparent transparent white;
+            margin-left: 3px;
+        }
+
+        .video-card .video-caption {
+            padding: 1rem 1.2rem;
+            font-size: 0.9rem;
+            color: var(--text-medium);
+        }
+
+        .gallery-subhead {
+            font-size: 1.4rem;
+            color: var(--navy);
+            margin-top: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* ---- GALLERY (inside media section) ---- */
+        .gallery {
+            background: var(--cream-dark);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.02);
+            opacity: 0.9;
+        }
+
+        .gallery-grid .gallery-wide {
+            grid-column: span 2;
+        }
+
+        .gallery-grid .gallery-tall {
+            grid-row: span 2;
+            height: 100%;
+        }
+
+        /* ---- CONTACT SECTION ---- */
+        .contact {
+            background: var(--navy);
+            color: var(--cream);
+        }
+
+        .contact .section-title {
+            color: var(--cream);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h3 {
+            color: var(--gold-light);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+
+        .contact-info h3:first-child {
+            margin-top: 0;
+        }
+
+        .contact-info p {
+            color: rgba(250, 248, 245, 0.7);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .contact-info a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--gold-light);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .form-group label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: rgba(250, 248, 245, 0.6);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            padding: 0.85rem 1rem;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 8px;
+            color: var(--cream);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.95rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-group select option {
+            background: var(--navy);
+            color: var(--cream);
+        }
+
+        .contact-form .btn-primary {
+            align-self: flex-start;
+            border: none;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            cursor: pointer;
+        }
+
+        /* ---- FOOTER ---- */
+        footer {
+            background: var(--navy);
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: rgba(250, 248, 245, 0.4);
+            font-size: 0.85rem;
+        }
+
+        /* ---- ANIMATIONS ---- */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ---- RESPONSIVE ---- */
+        @media (max-width: 900px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding-top: 7rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero-description {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-image {
+                display: flex;
+                justify-content: center;
+            }
+
+            .hero-image img {
+                max-width: 320px;
+                margin: 0 auto;
+            }
+
+            .hero-image::before {
+                display: none;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .lesson-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .perf-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .teaching-philosophy {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .video-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+            }
+
+            .testimonial-with-video {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .gallery-grid .gallery-wide {
+                grid-column: span 1;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: rgba(45, 32, 64, 0.98);
+                flex-direction: column;
+                padding: 1rem 2rem 2rem;
+                gap: 1rem;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 4rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================
+         NAVIGATION
+         ============================ -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-brand">En-Ting Hsu</a>
+            <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#teaching">Lessons</a></li>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============================
+         HERO SECTION
+         To change the hero image, replace images/portrait-doorway.jpg
+         ============================ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>En-Ting Hsu</h1>
+                <p class="hero-tagline">Violist, Violinist &amp; Educator</p>
+                <p class="hero-description">
+                    A performer and teacher devoted to the transformative power of music — from
+                    the concert stage to the classroom. Based in the Berkshires, Massachusetts.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#teaching" class="btn btn-primary">Explore Lessons</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- EDIT: Replace src with your hero portrait -->
+                <img src="images/portrait-doorway.jpg" alt="En-Ting Hsu, violist, holding her viola in an arched stone doorway">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
+         ABOUT SECTION
+         ============================ -->
+    <section class="about" id="about">
+        <div class="section-inner">
+            <div class="about-grid">
+                <div class="about-image fade-in">
+                    <!-- EDIT: Replace src with your headshot / secondary portrait -->
+                    <img src="images/headshot.jpg" alt="En-Ting Hsu professional portrait with viola">
+                </div>
+                <div class="about-text fade-in">
+                    <p class="section-label">About</p>
+                    <h2 class="section-title">A Journey Shaped by Music</h2>
+                    <div class="section-divider"></div>
+                    <p>
+                        A native of Tainan City, Taiwan, En-Ting Hsu discovered the life-changing power of music
+                        at age twelve when she attended a masterclass that would redirect the course of her life.
+                        That spark has carried her across continents — from concert halls in Asia to stages
+                        throughout the United States.
+                    </p>
+                    <p>
+                        En-Ting holds a Doctor of Musical Arts from the University of Missouri–Kansas City
+                        Conservatory (studying with Scott Lee), a Master of Music and Performer Diploma from
+                        Indiana University Jacobs School of Music, and a Bachelor of Music from National Taiwan
+                        Normal University.
+                    </p>
+                    <p class="highlight-quote">
+                        "Teaching just comes naturally to me. Seeing these kids grow makes me happier
+                        than performing perfectly on stage."
+                    </p>
+                    <p>
+                        Today, En-Ting is a member of the <strong>Berkshire Symphony</strong>, an
+                        active chamber musician, and a dedicated private teacher. She maintains a
+                        thriving studio in the Berkshires, teaching violin, viola, and chamber music
+                        to students of all ages and levels.
+                    </p>
+                    <div class="credentials">
+                        <span class="credential-tag">DMA, UMKC</span>
+                        <span class="credential-tag">MM, Indiana University</span>
+                        <span class="credential-tag">Suzuki Certified</span>
+                        <span class="credential-tag">Paul Rolland Certified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
+         TEACHING SECTION
+         ============================ -->
+    <section class="teaching" id="teaching">
+        <div class="section-inner">
+            <p class="section-label fade-in">Private Lessons</p>
+            <h2 class="section-title fade-in">Learn with En-Ting</h2>
+            <div class="section-divider fade-in"></div>
+            <p class="teaching-intro fade-in">
+                Whether you're a beginner picking up the instrument for the first time or an advancing
+                student preparing for auditions, En-Ting brings warmth, structure, and deep expertise
+                to every lesson. Available in-person in the Berkshires and online.
+            </p>
+
+            <div class="lesson-cards">
+                <div class="lesson-card fade-in">
+                    <h3>Violin Lessons</h3>
+                    <p>For students of all ages and levels, from first steps to advanced repertoire.</p>
+                    <ul>
+                        <li>Suzuki &amp; traditional methods</li>
+                        <li>Technique &amp; musicianship</li>
+                        <li>Recital &amp; audition preparation</li>
+                        <li>All ages welcome</li>
+                    </ul>
+                </div>
+                <div class="lesson-card fade-in">
+                    <h3>Viola Lessons</h3>
+                    <p>Study with a Doctor of Musical Arts in viola performance.</p>
+                    <ul>
+                        <li>Beginner through advanced</li>
+                        <li>Orchestral excerpt training</li>
+                        <li>Violinists exploring viola</li>
+                        <li>College audition prep</li>
+                    </ul>
+                </div>
+                <div class="lesson-card fade-in">
+                    <h3>Chamber Music Coaching</h3>
+                    <p>Ensemble coaching for duos, trios, quartets, and beyond.</p>
+                    <ul>
+                        <li>Rehearsal techniques</li>
+                        <li>Intonation &amp; blend</li>
+                        <li>Musical communication</li>
+                        <li>Competition preparation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-bottom: 3rem;" class="fade-in">
+                <p style="color: var(--text-medium); font-size: 1.05rem; margin-bottom: 1rem;">
+                    Not sure where to start? Reach out for a conversation about your goals — no commitment needed.
+                </p>
+                <a href="#contact" class="btn btn-primary">Inquire About Lessons</a>
+            </div>
+
+            <div class="teaching-philosophy fade-in">
+                <div>
+                    <h3>Teaching Philosophy</h3>
+                    <p>
+                        En-Ting believes that music education should be joyful, rigorous, and
+                        deeply personal. Drawing from Suzuki, Paul Rolland, and El Sistema traditions,
+                        she tailors her approach to each student — building not just technical skill but
+                        confidence, curiosity, and a lifelong love of music.
+                    </p>
+                    <p style="margin-top: 1rem;">
+                        As lead string teaching artist at Kids 4 Harmony, an El Sistema–inspired
+                        program in the Berkshires, En-Ting led students who performed annually at
+                        Tanglewood's Ozawa Hall. Her private students have gone on to serve as
+                        concertmaster of their school orchestras, earn placements in the
+                        MA Western District Orchestra at both junior and senior levels, and
+                        attend prestigious summer programs including PointCounterpoint and the
+                        Delgani String Quartet Academy.
+                    </p>
+                    <div class="certifications">
+                        <span class="cert-badge">Certified Suzuki Instructor</span>
+                        <span class="cert-badge">Paul Rolland Method</span>
+                        <span class="cert-badge">El Sistema Trained</span>
+                    </div>
+                </div>
+                <div>
+                    <!-- EDIT: Teaching action shot -->
+                    <img src="images/teaching-one-on-one.jpg" alt="En-Ting Hsu teaching a young violin student one-on-one">
+                </div>
+            </div>
+            <!-- TESTIMONIAL — embedded in teaching section -->
+            <div class="testimonial-with-video fade-in">
+                <div class="testimonial-side">
+                    <div class="quote-mark">&ldquo;</div>
+                    <blockquote>
+                        En-Ting has been transformative for my son Aero. In under two years of studying
+                        with her, we've watched him grow not just as a musician but as a person — his
+                        confidence, his discipline, his genuine excitement about playing. What sets
+                        En-Ting apart is the rare combination of world-class musical expertise with
+                        real warmth and patience. She holds her students to high standards, but always
+                        in a way that feels encouraging rather than stressful. It's clear that she's
+                        deeply invested in each student as an individual. I recommend her without
+                        hesitation to any family looking for a string teacher.
+                    </blockquote>
+                    <p class="testimonial-author">Chad Topaz</p>
+                    <p class="testimonial-detail">Parent of Aero (age 17) &bull; Violin student</p>
+                </div>
+                <div class="testimonial-video-side">
+                    <div class="video-card" onclick="lazyEmbed(this, '6fdHYDwRgsc')" style="box-shadow: none;">
+                        <div class="video-thumb" style="border-radius: 10px;">
+                            <img src="https://img.youtube.com/vi/6fdHYDwRgsc/hqdefault.jpg" alt="Aero performing violin" loading="lazy">
+                            <div class="play-btn"></div>
+                        </div>
+                    </div>
+                    <p class="video-caption">Aero performing violin</p>
+                </div>
+            </div>
+
+            <!-- EDIT: Add more testimonials here as you collect them -->
+        </div>
+    </section>
+
+    <!-- ============================
+         PERFORMANCE SECTION
+         ============================ -->
+    <section class="performance" id="performance">
+        <div class="section-inner">
+            <p class="section-label fade-in">On Stage</p>
+            <h2 class="section-title fade-in">Performance</h2>
+            <div class="section-divider fade-in"></div>
+            <p class="performance-intro fade-in">
+                En-Ting has performed on stages across the United States, Japan, South Korea, China,
+                and Hong Kong — as an orchestral musician, chamber musician, and soloist. She performs
+                on a viola crafted by Moes &amp; Moes.
+            </p>
+
+            <div class="perf-grid">
+                <div class="perf-item fade-in">
+                    <p class="perf-role">Orchestra</p>
+                    <h3>Berkshire Symphony</h3>
+                    <p>Current member of this Massachusetts-based orchestra, performing a wide
+                    range of symphonic repertoire.</p>
+                </div>
+                <div class="perf-item fade-in">
+                    <p class="perf-role">Former Principal</p>
+                    <h3>Topeka Symphony Orchestra</h3>
+                    <p>Served as principal violist, leading the viola section in
+                    orchestral performances.</p>
+                </div>
+                <div class="perf-item fade-in">
+                    <p class="perf-role">Chamber Music</p>
+                    <h3>Festival &amp; Ensemble Work</h3>
+                    <p>Eastern Music Festival, Bay View Music Festival, Heartland Chamber Music Festival,
+                    Kent/Blossom Music Festival. National Taiwan competition first-prize quartet.</p>
+                </div>
+                <div class="perf-item fade-in">
+                    <p class="perf-role">Collaboration</p>
+                    <h3>COJAC &amp; Guest Appearances</h3>
+                    <p>Member of the COJAC ensemble. Recent performances include Mozart's
+                    Sinfonia Concertante at St. John's Summer Concert Series in the Berkshires.</p>
+                </div>
+            </div>
+
+            <!-- ============================
+                 UPCOMING PERFORMANCES
+                 EDIT: Update this list with upcoming dates.
+                 Copy a <li> block for each new performance.
+                 Delete old ones after they've passed.
+                 ============================ -->
+            <div class="upcoming fade-in">
+                <h3>Upcoming Performances</h3>
+                <ul class="upcoming-list">
+                    <!--
+                        EDIT: To add a new performance, copy one of the <li> blocks below
+                        and update the date, title, location, and link. Delete old ones
+                        after they've passed.
+                    -->
+                    <li>
+                        <span class="upcoming-date">Mar 6, 2026</span>
+                        <div class="upcoming-info">
+                            <strong>Berkshire Symphony — "Opera Without Words"</strong>
+                            <span>Chapin Hall, Williams College, Williamstown &bull; Free admission</span>
+                        </div>
+                        <a href="https://events.williams.edu/event/berkshire-symphony-68/" class="btn btn-outline" style="color: var(--gold); border-color: var(--gold);" target="_blank" rel="noopener">Details</a>
+                    </li>
+                    <li>
+                        <span class="upcoming-date">Apr 24, 2026</span>
+                        <div class="upcoming-info">
+                            <strong>Berkshire Symphony — Student Soloist Gala</strong>
+                            <span>Chapin Hall, Williams College, Williamstown &bull; 7:30 PM &bull; Free</span>
+                        </div>
+                        <a href="https://events.williams.edu/event/berkshire-symphony-student-soloist-gala-7/" class="btn btn-outline" style="color: var(--gold); border-color: var(--gold);" target="_blank" rel="noopener">Details</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Event Booking Callout -->
+            <div class="event-callout fade-in">
+                <div>
+                    <h3>Planning a Wedding or Special Event?</h3>
+                    <p>
+                        En-Ting and her ensemble perform at weddings, receptions, corporate events,
+                        and private gatherings throughout the Berkshires and beyond. From elegant
+                        ceremony music to cocktail hour ambiance — make your occasion unforgettable.
+                    </p>
+                </div>
+                <a href="#contact" class="btn btn-primary" onclick="document.getElementById('interest').value='Event / Wedding Performance'">Book for Your Event</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
+         MEDIA / VIDEO SECTION
+         To add more videos, copy a video-card block and change the YouTube ID
+         ============================ -->
+    <section class="media" id="media">
+        <div class="section-inner">
+            <p class="section-label fade-in">Watch &amp; Listen</p>
+            <h2 class="section-title fade-in">En-Ting in Performance</h2>
+            <div class="section-divider fade-in"></div>
+            <p class="media-intro fade-in">
+                En-Ting performs with ensembles for concerts, events, and private occasions
+                including weddings and receptions throughout the Berkshires and beyond.
+            </p>
+
+            <div class="video-grid fade-in">
+                <!--
+                    These show thumbnails first, then load the real YouTube player on click.
+                    This works locally AND when hosted, and makes the page load faster.
+                -->
+                <div class="video-card" onclick="lazyEmbed(this, 'wvSawRBYzLs')">
+                    <div class="video-thumb">
+                        <img src="https://img.youtube.com/vi/wvSawRBYzLs/hqdefault.jpg" alt="En-Ting Hsu ensemble performance" loading="lazy">
+                        <div class="play-btn"></div>
+                    </div>
+                </div>
+                <div class="video-card" onclick="lazyEmbed(this, '1gkBRbT6e8k')">
+                    <div class="video-thumb">
+                        <img src="https://img.youtube.com/vi/1gkBRbT6e8k/hqdefault.jpg" alt="En-Ting Hsu ensemble performance" loading="lazy">
+                        <div class="play-btn"></div>
+                    </div>
+                </div>
+                <div class="video-card" onclick="lazyEmbed(this, 'r9CeyoIMVgw')">
+                    <div class="video-thumb">
+                        <img src="https://img.youtube.com/vi/r9CeyoIMVgw/hqdefault.jpg" alt="En-Ting Hsu ensemble performance" loading="lazy">
+                        <div class="play-btn"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHOTO GALLERY — integrated into media section -->
+            <h3 class="gallery-subhead fade-in">Photos</h3>
+            <div class="gallery-grid fade-in">
+                <img src="images/teaching-one-on-one.jpg" alt="En-Ting working one-on-one with a young violin student">
+                <img src="images/make-music-day.jpg" alt="En-Ting and students performing at Make Music Day in tuxedo shirts">
+                <img src="images/teaching-group.jpg" alt="En-Ting leading a group violin class with young students">
+                <img src="images/portrait-doorway.jpg" alt="En-Ting Hsu portrait with viola">
+                <!-- EDIT: Add more images here as you get them -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
+         CONTACT SECTION
+         ============================ -->
+    <section class="contact" id="contact">
+        <div class="section-inner">
+            <p class="section-label fade-in">Get Started</p>
+            <h2 class="section-title fade-in">Let's Make Music Together</h2>
+            <div class="section-divider fade-in"></div>
+
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h3>Lesson Inquiries</h3>
+                    <p>
+                        Interested in studying violin, viola, or chamber music with En-Ting?
+                        Fill out the form or reach out directly. She'd love to hear from you.
+                    </p>
+
+                    <h3>Location</h3>
+                    <p>
+                        Based in <strong>Berkshire County, Massachusetts</strong><br>
+                        In-person and online lessons available
+                    </p>
+
+                    <h3>Email</h3>
+                    <p>
+                        <a href="mailto:ckdinay@gmail.com">ckdinay@gmail.com</a>
+                    </p>
+
+                    <h3>Connect</h3>
+                    <p>
+                        <!-- EDIT: Update social media links as needed -->
+                        <a href="https://www.linkedin.com/in/en-ting-hsu-476008b8/" target="_blank" rel="noopener" style="margin-right: 1rem;">LinkedIn</a>
+                    </p>
+                </div>
+
+                <!--
+                    CONTACT FORM — uses mailto: so no backend service is needed.
+                    When someone fills this out and clicks Send, it opens their email
+                    app with En-Ting's address and the form info pre-filled.
+                    Zero setup, works anywhere, no accounts needed.
+                -->
+                <form class="contact-form fade-in" id="contact-form" onsubmit="submitContactForm(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">I'm interested in</label>
+                        <select id="interest" name="interest">
+                            <option value="Violin Lessons">Violin Lessons</option>
+                            <option value="Viola Lessons">Viola Lessons</option>
+                            <option value="Chamber Music Coaching">Chamber Music Coaching</option>
+                            <option value="Event / Wedding Performance">Event / Wedding Performance</option>
+                            <option value="Something Else">Something Else</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your musical background, goals, or any questions..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p style="font-size: 0.8rem; color: rgba(250,248,245,0.4); margin-top: 0.5rem;">
+                        This will open your email app with a pre-filled message.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
+         FOOTER
+         ============================ -->
+    <footer>
+        <p>&copy; 2026 En-Ting Hsu. All rights reserved.</p>
+    </footer>
+
+    <!-- ============================
+         JAVASCRIPT
+         ============================ -->
+    <script>
+        // Scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('open');
+            });
+        });
+
+        // Lazy YouTube embed — shows thumbnail first, loads real player on click.
+        // If the iframe can't load (e.g. local file://), falls back to opening YouTube.
+        function lazyEmbed(card, videoId) {
+            const thumb = card.querySelector('.video-thumb');
+            if (!thumb) return;
+            const iframe = document.createElement('iframe');
+            iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0';
+            iframe.setAttribute('allowfullscreen', '');
+            iframe.setAttribute('allow', 'autoplay; encrypted-media');
+            iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:none;';
+            // Keep the wrapper dimensions
+            thumb.innerHTML = '';
+            thumb.appendChild(iframe);
+            // Fallback: if iframe fails to load after 3 seconds, open YouTube directly
+            setTimeout(() => {
+                try {
+                    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                    if (!iframeDoc || iframeDoc.body.innerHTML === '') {
+                        window.open('https://www.youtube.com/watch?v=' + videoId, '_blank');
+                    }
+                } catch(e) {
+                    // Cross-origin means it loaded fine (YouTube is serving content)
+                }
+            }, 3000);
+        }
+
+        // Contact form — builds a mailto: link from the form fields
+        function submitContactForm(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const interest = document.getElementById('interest').value;
+            const message = document.getElementById('message').value;
+
+            const subject = encodeURIComponent('Website Inquiry: ' + interest);
+            const body = encodeURIComponent(
+                'Hi En-Ting,\n\n' +
+                'Name: ' + name + '\n' +
+                'Email: ' + email + '\n' +
+                'Interested in: ' + interest + '\n\n' +
+                (message ? message + '\n' : '')
+            );
+
+            window.location.href = 'mailto:ckdinay@gmail.com?subject=' + subject + '&body=' + body;
+        }
+    </script>
+</body>
+</html>
