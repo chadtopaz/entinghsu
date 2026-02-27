@@ -756,6 +756,48 @@
             font-style: italic;
         }
 
+        /* ---- ADDITIONAL TESTIMONIALS ---- */
+        .testimonial-row {
+            margin-top: 2.5rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .mini-testimonial {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border-top: 3px solid var(--gold);
+        }
+
+        .mini-testimonial blockquote {
+            font-size: 0.95rem;
+            color: var(--text-medium);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .mini-testimonial .testimonial-author {
+            font-size: 0.9rem;
+            color: var(--navy);
+            font-weight: 600;
+        }
+
+        .mini-testimonial .testimonial-detail {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 0.15rem;
+        }
+
+        @media (max-width: 900px) {
+            .testimonial-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* ---- MEDIA / VIDEO SECTION ---- */
         .media {
             background: var(--white);
@@ -1211,6 +1253,7 @@
                         <span class="credential-tag">MM, Indiana University</span>
                         <span class="credential-tag">Suzuki Certified</span>
                         <span class="credential-tag">Paul Rolland Certified</span>
+                        <span class="credential-tag">ASTA Bornoff Scholar</span>
                     </div>
                 </div>
             </div>
@@ -1287,7 +1330,8 @@
                         concertmaster of their school orchestras, earn placements in the
                         MA Western District Orchestra at both junior and senior levels, and
                         attend prestigious summer programs including PointCounterpoint and the
-                        Delgani String Quartet Academy.
+                        Delgani String Quartet Academy. Former students have gone on to study
+                        viola performance and music education at the university level.
                     </p>
                     <div class="certifications">
                         <span class="cert-badge">Certified Suzuki Instructor</span>
@@ -1328,6 +1372,33 @@
                 </div>
             </div>
 
+            <div class="testimonial-row fade-in">
+                <div class="mini-testimonial">
+                    <blockquote>
+                        "En-Ting is an incredibly supportive and motivating teacher who has
+                        transformed my experience. She improved my musicality, technical skills,
+                        and confidence — and helped me land my first paying performance."
+                    </blockquote>
+                    <p class="testimonial-author">Aero</p>
+                    <p class="testimonial-detail">Current student (age 17) &bull; Violin</p>
+                </div>
+                <div class="mini-testimonial">
+                    <blockquote>
+                        "En-Ting is a gem of a teacher. She is able to meet my children where
+                        they are — her skill with young children is remarkable. She teaches them
+                        focus and perseverance while keeping things joyful."
+                    </blockquote>
+                    <p class="testimonial-author">Devan</p>
+                    <p class="testimonial-detail">Parent of young students</p>
+                </div>
+                <div class="mini-testimonial">
+                    <blockquote>
+                        "The things you say breathe life into the music and my playing."
+                    </blockquote>
+                    <p class="testimonial-author">Ethan</p>
+                    <p class="testimonial-detail">Former student &bull; Now studying viola performance at UMKC Conservatory</p>
+                </div>
+            </div>
             <!-- EDIT: Add more testimonials here as you collect them -->
         </div>
     </section>
@@ -1431,28 +1502,53 @@
             <h2 class="section-title fade-in">Videos &amp; Photos</h2>
             <div class="section-divider fade-in"></div>
 
+            <h3 class="gallery-subhead fade-in" style="margin-top: 0;">Concert Performances</h3>
             <div class="video-grid fade-in">
-                <!--
-                    These show thumbnails first, then load the real YouTube player on click.
-                    This works locally AND when hosted, and makes the page load faster.
-                -->
+                <div class="video-card" onclick="lazyEmbed(this, '1D3fpeKZT4o')">
+                    <div class="video-thumb">
+                        <img src="https://img.youtube.com/vi/1D3fpeKZT4o/hqdefault.jpg" alt="Schumann Märchenbilder — En-Ting Hsu, viola" loading="lazy">
+                        <div class="play-btn"></div>
+                    </div>
+                    <div class="video-caption">Schumann: Märchenbilder</div>
+                </div>
+                <div class="video-card" onclick="lazyEmbed(this, 'UTvflz1uIQE')">
+                    <div class="video-thumb">
+                        <img src="https://img.youtube.com/vi/UTvflz1uIQE/hqdefault.jpg" alt="Schubert Death and the Maiden string quartet" loading="lazy">
+                        <div class="play-btn"></div>
+                    </div>
+                    <div class="video-caption">Schubert: "Death and the Maiden"</div>
+                </div>
+                <div class="video-card" onclick="lazyEmbed(this, 'Gzegb4vqPKE')">
+                    <div class="video-thumb">
+                        <img src="https://img.youtube.com/vi/Gzegb4vqPKE/hqdefault.jpg" alt="Dvořák String Quintet at Kent Blossom Music Festival" loading="lazy">
+                        <div class="play-btn"></div>
+                    </div>
+                    <div class="video-caption">Dvořák: String Quintet No. 2 — Kent Blossom Festival</div>
+                </div>
+            </div>
+
+            <h3 class="gallery-subhead fade-in">Live &amp; Local</h3>
+            <div class="video-grid fade-in">
+                <div class="video-card" onclick="lazyEmbed(this, '8DcZmvCNGjk')">
+                    <div class="video-thumb">
+                        <img src="https://img.youtube.com/vi/8DcZmvCNGjk/hqdefault.jpg" alt="Noontime concert at St. John's Episcopal Church, Williamstown" loading="lazy">
+                        <div class="play-btn"></div>
+                    </div>
+                    <div class="video-caption">Noontime Concert — St. John's, Williamstown</div>
+                </div>
                 <div class="video-card" onclick="lazyEmbed(this, 'wvSawRBYzLs')">
                     <div class="video-thumb">
                         <img src="https://img.youtube.com/vi/wvSawRBYzLs/hqdefault.jpg" alt="En-Ting Hsu ensemble performance" loading="lazy">
                         <div class="play-btn"></div>
                     </div>
-                </div>
-                <div class="video-card" onclick="lazyEmbed(this, '1gkBRbT6e8k')">
-                    <div class="video-thumb">
-                        <img src="https://img.youtube.com/vi/1gkBRbT6e8k/hqdefault.jpg" alt="En-Ting Hsu ensemble performance" loading="lazy">
-                        <div class="play-btn"></div>
-                    </div>
+                    <div class="video-caption">Ensemble Performance</div>
                 </div>
                 <div class="video-card" onclick="lazyEmbed(this, 'r9CeyoIMVgw')">
                     <div class="video-thumb">
                         <img src="https://img.youtube.com/vi/r9CeyoIMVgw/hqdefault.jpg" alt="En-Ting Hsu ensemble performance" loading="lazy">
                         <div class="play-btn"></div>
                     </div>
+                    <div class="video-caption">Ensemble Performance</div>
                 </div>
             </div>
 
